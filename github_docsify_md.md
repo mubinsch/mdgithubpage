@@ -90,13 +90,13 @@ git push -u origin main
 ---
 
 ## 📌 One Caveat (Easy Fix)
-Docsify doesn't support `[[wikilinks]]` by default — but **standard Markdown links work**:
+Docsify doesn't support `[wikilinks](wikilinks.md)` by default — but **standard Markdown links work**:
 ```markdown
 # Good (works everywhere)
 [Link to note](note.md)
 
 # Bad (Obsidian-only)
-[[note]]
+[note](note.md)
 ```
 
 **Quick fix**: Run this PowerShell command to convert wikilinks → standard links:
